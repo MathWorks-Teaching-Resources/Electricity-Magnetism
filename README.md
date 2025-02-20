@@ -37,7 +37,7 @@ Use the [<img src="Images/image_1.png" width="136" alt="image_1.png">](https://m
 
 ### **On Desktop:**
 
-Download or clone this repository. Open MATLAB, navigate to the folder containing these scripts and double\-click on [emag.prj](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/emag&project=emag.prj&file=README.mlx). It will add the appropriate files to your MATLAB path and open an app that asks you where you would like to start. 
+Download or clone this repository. Open MATLAB, navigate to the folder containing these scripts and double\-click on [emag.prj](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=README.mlx). It will add the appropriate files to your MATLAB path and open an app that asks you where you would like to start. 
 
 
 Ensure you have all the required products ([listed below](#H_E850B4FF)) installed. If you need to include a product, add it using the Add\-On Explorer. To install an add\-on, go to the **Home** tab and select  <img src="Images/image_2.png" width="16" alt="image_2.png"> **Add-Ons** > **Get Add-Ons**. 
@@ -65,14 +65,14 @@ Simscape™
 
 |||
 | :-- | :-- |
-| <img src="Images/image_3.svg" width="171" alt="image_3.svg"> <br>  | [**CapacitorsFundamental.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/emag&project=emag.prj&file=Scripts/CapacitorsFundamentals.mlx) <br> **In this script, students will...** <br> $\bullet$ Explore the fundamental principles and applications of capacitors in electrical circuits. <br> $\bullet$ Analyze the relationship between capacitors and electric fields, including their role in storing and releasing electrical energy. <br>   |
-| <img src="Images/image_4.png" width="171" alt="image_4.png"> <br>  | [**CapacitorsChargeDischarge.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/emag&project=emag.prj&file=Scripts/CapacitorsChargeDischarge.mlx) <br> **In this script, students will...** <br> $\bullet$ Analyze energy storage in capacitors and evaluate its applications in circuits. <br> $\bullet$ Simulate the charge and discharge of capacitors to demonstrate their role. <br>   |
+| <img src="Images/image_3.svg" width="171" alt="image_3.svg"> <br>  | [**CapacitorsFundamental.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/CapacitorsFundamentals.mlx) <br> **In this script, students will...** <br> $\bullet$ Explore the fundamental principles and applications of capacitors in electrical circuits. <br> $\bullet$ Analyze the relationship between capacitors and electric fields, including their role in storing and releasing electrical energy. <br>   |
+| <img src="Images/image_4.png" width="171" alt="image_4.png"> <br>  | [**CapacitorsChargeDischarge.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/CapacitorsChargeDischarge.mlx) <br> **In this script, students will...** <br> $\bullet$ Analyze energy storage in capacitors and evaluate its applications in circuits. <br> $\bullet$ Simulate the charge and discharge of capacitors to demonstrate their role. <br>   |
 
 <a id="H_F61733D7"></a>
 
 # License
 
-The license for this module is available in the [LICENSE.md](https://github.com/MathWorks-Teaching-Resources/emag/blob/release/LICENSE.md).
+The license for this module is available in the [LICENSE.md](https://github.com/MathWorks-Teaching-Resources/Electricity-Magnetism/blob/release/LICENSE.md).
 
 # Related Courseware Modules
 <a id="H_868F5748"></a>
@@ -98,7 +98,7 @@ Or feel free to explore our other [modular courseware content](https://www.mathw
 
 # Contribute 
 
-Looking for more? Find an issue? Have a suggestion? Please contact the [MathWorks teaching resources team](mailto:%20onlineteaching@mathworks.com). If you want to contribute directly to this project, you can find information about how to do so in the [CONTRIBUTING.md](https://github.com/MathWorks-Teaching-Resources/emag/blob/release/CONTRIBUTING.md)  page on GitHub.
+Looking for more? Find an issue? Have a suggestion? Please contact the [MathWorks teaching resources team](mailto:%20onlineteaching@mathworks.com). If you want to contribute directly to this project, you can find information about how to do so in the [CONTRIBUTING.md](https://github.com/MathWorks-Teaching-Resources/Electricity-Magnetism/blob/release/CONTRIBUTING.md)  page on GitHub.
 
 
  *©* Copyright 2025 The MathWorks, Inc
