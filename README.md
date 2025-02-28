@@ -21,8 +21,7 @@ This curriculum module contains interactive [MATLAB® live scripts](https://www.
 
 ## Background
 
-These live scripts can be used as demonstrations in lectures, class activities, or interactive assignments outside class. This module covers electric fields and charge, magnetic fields and current, and the governing physical equations of electricity and magnetism. It also includes examples of applications like DC motors, capacitors, and magnetic braking.
-
+This initial release of the Electricity & Magnetism courseware features two interactive scripts that explore the principles of how capacitors function, based on the laws of electrostatics.
 
 The instructions inside the live scripts will guide you through the exercises and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the <img src="Images/image_0.png" width="19" alt="image_0.png"> Stop button in the **RUN** section of the **Live Editor** tab in the MATLAB Toolstrip.
 
@@ -77,6 +76,41 @@ Simscape™
 | <img src="Images/image_3.svg" width="171" alt="image_3.svg"> <br>  | [**CapacitorsFundamental.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/CapacitorsFundamentals.mlx) <br> **In this script, students will...** <br> $\bullet$ Explore the fundamental principles and applications of capacitors in electrical circuits. <br> $\bullet$ Analyze the relationship between capacitors and electric fields, including their role in storing and releasing electrical energy. <br>   |
 | <img src="Images/image_4.png" width="171" alt="image_4.png"> <br>  | [**CapacitorsChargeDischarge.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/CapacitorsChargeDischarge.mlx) <br> **In this script, students will...** <br> $\bullet$ Analyze energy storage in capacitors and evaluate its applications in circuits. <br> $\bullet$ Simulate the charge and discharge of capacitors to demonstrate their role. <br>   |
 
+<a id="H_37d7"></a>
+
+## **ElectricFieldAndCharge.mlx (planned)**
+|||
+| :-: | :-- |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Images/image_5.svg" width="40" alt="image_5.svg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>  | **In this script, students will...** <br> $\bullet$ Analyze the relationship between electric charges and electric fields. <br> $\bullet$ Illustrate electric field lines. <br> $\bullet$ Compute the electric field due to point charges and continuous charge distributions. <br>   |
+
+<a id="H_3e1e"></a>
+
+## **ElectricPotentialGaussLaw.mlx (planned)**
+|||
+| :-- | :-- |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/image_5.svg" width="40" alt="image_6.svg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>  | **In this script, students will...** <br> $\bullet$ Utilize Gauss's Law to determine electric fields for symmetric charge distributions. <br> $\bullet$ Explain the concept of electric potential and its relation to electric field. <br> $\bullet$ Compute electric potential for various charge configurations. <br>   |
+
+<a id="H_5252"></a>
+
+## **MagneticFieldAndCurrent.mlx (planned)**
+|||
+| :-- | :-- |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Images/image_5.svg" width="40" alt="image_7.svg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <br>  | **In this script, students will...** <br> $\bullet$ Describe how electric currents generate magnetic fields. <br> $\bullet$ Apply the Biot\-Savart law and Ampère's law to calculate magnetic fields. <br> $\bullet$ Illustrate magnetic field lines around current\-carrying conductors. <br>   |
+
+<a id="H_76d7"></a>
+
+## **MagneticDipole.mlx (planned)**
+|||
+| :-- | :-- |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Images/image_5.svg" width="40" alt="image_8.svg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <br>  | **In this script, students will...** <br> $\bullet$ Explain the concept of magnetic dipole and its properties. <br> $\bullet$ Evaluate the interaction of magnetic dipoles with external magnetic fields. <br> $\bullet$ Determine the torque and potential energy of magnetic dipoles in various field configurations. <br>   |
+
+<a id="H_5c7e"></a>
+
+## **MagneticApplication.mlx (planned)**
+|||
+| :-- | :-- |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Images/image_5.svg" width="40" alt="image_9.svg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <br>  | **In this script, students will...** <br> $\bullet$ Explain the basic principles of DC motor operation and the role of electromagnetic force. <br> $\bullet$ Examine the relationship between current, magnetic field, and torque in a DC motor. <br> $\bullet$ Model the performance and efficiency of DC motors. <br>   |
+
 <a id="H_F61733D7"></a>
 
 # License
@@ -89,14 +123,14 @@ The license for this module is available in the [LICENSE.md](https://github.com/
 ## [DC Circuit Analysis](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/DC-Circuit-Analysis&project=DCCircuitAnalysis.prj&file=README.mlx)
 |||
 | :-- | :-- |
-| <img src="Images/image_5.png" width="171" alt="image_5.png"> <br>  | **Available on:** <br> [<img src="Images/image_6.png" width="91" alt="image_6.png">](https://www.mathworks.com/matlabcentral/fileexchange/103375-dc-circuit-analysis) <br> [<img src="Images/image_7.png" width="136" alt="image_7.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/DC-Circuit-Analysis&project=DCCircuitAnalysis.prj&file=README.mlx) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/DC-Circuit-Analysis) <br>   |
+| <img src="Images/image_10.png" width="171" alt="image_10.png"> <br>  | **Available on:** <br> [<img src="Images/image_11.png" width="91" alt="image_11.png">](https://www.mathworks.com/matlabcentral/fileexchange/103375-dc-circuit-analysis) <br> [<img src="Images/image_12.png" width="136" alt="image_12.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/DC-Circuit-Analysis&project=DCCircuitAnalysis.prj&file=README.mlx) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/DC-Circuit-Analysis) <br>   |
 
 <a id="H_868F5748"></a>
 
 ## [Virtual Measurement of Electron charge\-to\-mass ratio lab](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Virtual-Measurement-of-the-Electron-Charge-To-Mass-Ratio-Lab&project=virtual-measurement-of-the-electron-charge-to-m.prj&file=README.mlx)
 |||
 | :-- | :-- |
-| <img src="Images/image_8.png" width="171" alt="image_8.png"> <br>  | **Available on:** <br> [<img src="Images/image_9.png" width="91" alt="image_9.png">](https://www.mathworks.com/matlabcentral/fileexchange/94540-virtual-measurement-of-e-m-lab) <br> [<img src="Images/image_10.png" width="136" alt="image_10.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Virtual-Measurement-of-the-Electron-Charge-To-Mass-Ratio-Lab&project=virtual-measurement-of-the-electron-charge-to-m.prj&file=README.mlx) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/Virtual-Measurement-of-the-Electron-Charge-To-Mass-Ratio-Lab) <br>   |
+| <img src="Images/image_13.png" width="171" alt="image_13.png"> <br>  | **Available on:** <br> [<img src="Images/image_14.png" width="91" alt="image_14.png">](https://www.mathworks.com/matlabcentral/fileexchange/94540-virtual-measurement-of-e-m-lab) <br> [<img src="Images/image_15.png" width="136" alt="image_15.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Virtual-Measurement-of-the-Electron-Charge-To-Mass-Ratio-Lab&project=virtual-measurement-of-the-electron-charge-to-m.prj&file=README.mlx) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/Virtual-Measurement-of-the-Electron-Charge-To-Mass-Ratio-Lab) <br>   |
 
 
 Or feel free to explore our other [modular courseware content](https://www.mathworks.com/matlabcentral/fileexchange/?q=tag%3A%22courseware+module%22&sort=downloads_desc_30d).
