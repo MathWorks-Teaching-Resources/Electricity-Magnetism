@@ -204,9 +204,6 @@ classdef ProjectStartupApp < matlab.apps.AppBase
         % Create UIFigure and components
         function createComponents(app)
 
-            % Get the file path for locating images
-            pathToMLAPP = fileparts(mfilename('fullpath'));
-
             % Create StartUpAppUIFigure and hide until all components are created
             app.StartUpAppUIFigure = uifigure('Visible', 'off');
             app.StartUpAppUIFigure.AutoResizeChildren = 'off';
@@ -252,7 +249,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.CoverImage = uiimage(app.WelcomeGrid);
             app.CoverImage.Layout.Row = 2;
             app.CoverImage.Layout.Column = [1 3];
-            app.CoverImage.ImageSource = fullfile(pathToMLAPP, 'Images', 'image_3.svg');
+            app.CoverImage.ImageSource = 'image_3.svg';
 
             % Create WelcomeTitle
             app.WelcomeTitle = uilabel(app.WelcomeGrid);
