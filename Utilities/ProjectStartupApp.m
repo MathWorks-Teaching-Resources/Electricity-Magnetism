@@ -99,9 +99,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
 
         % Code that executes after component creation
         function startupFcn(app)
-            
-            % Copy title
-            app.ReviewTitle.Text = app.WelcomeTitle.Text;
+
 
             % Switch tab to review if has not been reviewed yet
             if isfile(fullfile("Utilities","ProjectSettings.mat"))
@@ -112,14 +110,11 @@ classdef ProjectStartupApp < matlab.apps.AppBase
                 numLoad = 1; % Initialize counter
             end
 
-            % Select tab to display
+            % Switch tab for review
             if ~isReviewed && numLoad > 2
                 isReviewed = true;
-                app.FeedBackGrid.Parent = app.StartUpAppUIFigure; 
-            else
-                app.WelcomeGrid.Parent = app.StartUpAppUIFigure;
+                app.TabGroup.SelectedTab = app.TabReview;
             end
-            app.InitPosition = app.StartUpAppUIFigure.Position;
 
             % Save new settings
             app.saveSettings(isReviewed,numLoad)
@@ -140,6 +135,10 @@ classdef ProjectStartupApp < matlab.apps.AppBase
                 websave(fullfile("Utilities/SurveyLinks.mat"),Answer.Body.Data.download_url);
             catch
             end
+
+            % Prepopulate the App Grid:
+            app.WelcomeGrid.Parent = app.StartUpAppUIFigure;
+            app.InitPosition = app.StartUpAppUIFigure.Position;
         end
 
         % Close request function: StartUpAppUIFigure
@@ -249,14 +248,14 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.CoverImage = uiimage(app.WelcomeGrid);
             app.CoverImage.Layout.Row = 2;
             app.CoverImage.Layout.Column = [1 3];
-            app.CoverImage.ImageSource = 'image_3.svg';
+            app.CoverImage.ImageSource = 'Images/image_6.png';
 
             % Create WelcomeTitle
             app.WelcomeTitle = uilabel(app.WelcomeGrid);
             app.WelcomeTitle.HorizontalAlignment = 'center';
             app.WelcomeTitle.VerticalAlignment = 'top';
             app.WelcomeTitle.WordWrap = 'on';
-            app.WelcomeTitle.FontSize = 18;
+            app.WelcomeTitle.FontSize = 24;
             app.WelcomeTitle.FontWeight = 'bold';
             app.WelcomeTitle.Layout.Row = 1;
             app.WelcomeTitle.Layout.Column = [1 3];
@@ -310,7 +309,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.ReviewText = uilabel(app.FeedBackGrid);
             app.ReviewText.HorizontalAlignment = 'center';
             app.ReviewText.WordWrap = 'on';
-            app.ReviewText.FontSize = 14;
+            app.ReviewText.FontSize = 18;
             app.ReviewText.Layout.Row = 2;
             app.ReviewText.Layout.Column = [1 3];
             app.ReviewText.Text = 'Please help us improve your experience by answering a few questions.';
@@ -324,7 +323,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.ReviewTitle.FontWeight = 'bold';
             app.ReviewTitle.Layout.Row = 1;
             app.ReviewTitle.Layout.Column = [1 3];
-            app.ReviewTitle.Text = '';
+            app.ReviewTitle.Text = 'Welcome to Module Template';
 
             % Show the figure after all components are created
             app.StartUpAppUIFigure.Visible = 'on';

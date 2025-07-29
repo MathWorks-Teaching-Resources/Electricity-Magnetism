@@ -1,1 +1,5 @@
-{"schemaVersion":1,"label":"Test Status","color":"yellowgreen","message":"R2024b"}
+<<<<<<< HEAD
+{"schemaVersion":1,"label":"Test Status","color":"success","message":"R2024a"}
+=======
+{"schemaVersion":1,"label":"Test Status","color":"success","message":"R2024b"}
+>>>>>>> a378cdeb49aaf05073c441bbd8b93fc6ee178aac
