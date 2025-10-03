@@ -20,69 +20,19 @@ classdef ProjectStartupApp < matlab.apps.AppBase
         MainMenuButton      matlab.ui.control.Button
     end
 
-    
+    % Properties to be modified
     properties (Access = private)
         GitHubOrganization = "MathWorks-Teaching-Resources"; % Description
-        GitHubRepository = "emag";
-        InitPosition;
+        GitHubRepository = "Electricity-Magnetism";
+        ImagePath {mustBeFile} = fullfile("Images","image_6.png"); 
     end
-%% How to customize the app?    
-%{
-    
-    This StartUp app is designed to be customized to your module. It
-    requires a minimum number of customization:
-    
-    1. Change "Module Template" in app.WelcomeTitle by your module name
-    2. Change "Module Template" in app.ReviewTitle by your module name
-    3. Change the GitHubRepository (line 25) to the correct value
-    4. Change image in app.CoverImage by the cover image you would like for your
-       module. This image should be located in rootFolder/Images
-    5. Create your MS Form:
-        a. Make a copy of the Faculty and the Student Template surveys
-        b. Customize the name of the survey to match the name of your
-           survey
-        c. Click on "Collect responses", select "Anyone can respond" and
-        copy the form link to SetupAppLinks (see step 6).
-    5. Create your MS Sway:
-        a. Go to MS Sway
-        b. Create a blank sway
-        c. Add the name of your module to the title box
-        d. Click "Share", Select "Anyone with a link", Select "View"
-        e. Copy the sway link to SetupAppLinks (see step 6).
-    6. Add the Survey and Sway link to Utilities/SurveyLinks using
-    SetupAppLinks.mlx in InternalFiles/RequiredFunctions/StartUpFcn
-    7. Save > Export to .m file and save the result as
-    Utilities/ProjectStartupApp.m
 
-%}
+    properties (Access = private)
+        InitPosition;
+        ProjectName;
+    end
 
     methods (Access = private, Static)
-
-        function pingSway(app)
-            try
-                if ~ispref("MCCTEAM")
-                    load Utilities\SurveyLinks.mat SwayLink
-                    webread(SwayLink);
-                end
-            catch
-            end
-        end
-        
-        function openStudentForm(app)
-            try
-                load Utilities\SurveyLinks.mat StudentFormLink
-                web(StudentFormLink);
-            catch
-            end
-        end
-
-        function openFacultyForm(app)
-            try
-                load Utilities\SurveyLinks.mat FacultyFormLink
-                web(FacultyFormLink);
-            catch
-            end
-        end
 
         function saveSettings(isReviewed,numLoad)
             try
@@ -99,7 +49,12 @@ classdef ProjectStartupApp < matlab.apps.AppBase
 
         % Code that executes after component creation
         function startupFcn(app)
-
+            
+            % Copy title and set cover image
+            app.ProjectName = currentProject().Name;
+            app.WelcomeTitle.Text = "Welcome to " + app.ProjectName; 
+            app.ReviewTitle.Text = app.WelcomeTitle.Text;
+            app.CoverImage.ImageSource = app.ImagePath;
 
             % Switch tab to review if has not been reviewed yet
             if isfile(fullfile("Utilities","ProjectSettings.mat"))
@@ -110,35 +65,18 @@ classdef ProjectStartupApp < matlab.apps.AppBase
                 numLoad = 1; % Initialize counter
             end
 
-            % Switch tab for review
+            % Select tab to display
             if ~isReviewed && numLoad > 2
                 isReviewed = true;
-                app.TabGroup.SelectedTab = app.TabReview;
+                app.FeedBackGrid.Parent = app.StartUpAppUIFigure; 
+            else
+                app.WelcomeGrid.Parent = app.StartUpAppUIFigure;
             end
+            app.InitPosition = app.StartUpAppUIFigure.Position;
 
             % Save new settings
             app.saveSettings(isReviewed,numLoad)
-
-            % Download links to survey (should only work when module goes
-            % public on GitHub)
-            try
-                import matlab.net.*
-                import matlab.net.http.*
-                
-                Request = RequestMessage;
-                Request.Method = 'GET';
-                Address = URI("http://api.github.com/repos/"+app.GitHubOrganization+...
-                    "/"+app.GitHubRepository+"/contents/Utilities/SurveyLinks.mat");
-                Request.Header    = HeaderField("X-GitHub-Api-Version","2022-11-28");
-                Request.Header(2) = HeaderField("Accept","application/vnd.github+json");
-                [Answer,~,~] = send(Request,Address);
-                websave(fullfile("Utilities/SurveyLinks.mat"),Answer.Body.Data.download_url);
-            catch
-            end
-
-            % Prepopulate the App Grid:
-            app.WelcomeGrid.Parent = app.StartUpAppUIFigure;
-            app.InitPosition = app.StartUpAppUIFigure.Position;
+            
         end
 
         % Close request function: StartUpAppUIFigure
@@ -166,22 +104,46 @@ classdef ProjectStartupApp < matlab.apps.AppBase
 
         % Button pushed function: FacultyButton
         function FacultyButtonPushed(app, event)
-            app.pingSway;
-            app.openFacultyForm;
+            % Open Faculty Form
+            import matlab.net.*
+            % Create the URI object with the base URL
+            uri = URI('https://forms.office.com/Pages/ResponsePage.aspx','literal');
+            % Set the Query property with an array of QueryParameter objects
+            uri.Query = [
+                QueryParameter('id', 'ETrdmUhDaESb3eUHKx3B5mlcO9AKxC5AgMAKBg6OKuBUNTVXVlBTS0lOU0hPRExYMldGWldVQUhIRC4u')
+                QueryParameter('r2017080ed20546d1a2db18fe36421929', app.ProjectName)
+                ];
+            web(strrep(uri.EncodedURI,"+","%20"))
             StartUpAppUIFigureCloseRequest(app,event)
         end
 
         % Button pushed function: StudentButton
         function StudentButtonPushed(app, event)
-            app.pingSway;
-            app.openStudentForm;
+            % Open Student Form
+            import matlab.net.*
+            % Create the URI object with the base URL
+            uri = URI('https://forms.office.com/Pages/ResponsePage.aspx','literal');
+            % Set the Query property with an array of QueryParameter objects
+            uri.Query = [
+                QueryParameter('id', 'ETrdmUhDaESb3eUHKx3B5mlcO9AKxC5AgMAKBg6OKuBUNlNBOVRZSDZHT1VTMzA4MjdHSUdVR0o3Vy4u')
+                QueryParameter('r362e367caa234debbf4f65a58a0338e6', app.ProjectName)
+                ];
+            web(strrep(uri.EncodedURI,"+","%20"))
             StartUpAppUIFigureCloseRequest(app,event)
         end
 
         % Button pushed function: OtherButton
         function OtherButtonPushed(app, event)
-            app.pingSway;
-            app.openStudentForm;
+            % Open Student Form
+            import matlab.net.*
+            % Create the URI object with the base URL
+            uri = URI('https://forms.office.com/Pages/ResponsePage.aspx','literal');
+            % Set the Query property with an array of QueryParameter objects
+            uri.Query = [
+                QueryParameter('id', 'ETrdmUhDaESb3eUHKx3B5mlcO9AKxC5AgMAKBg6OKuBUNlNBOVRZSDZHT1VTMzA4MjdHSUdVR0o3Vy4u')
+                QueryParameter('r362e367caa234debbf4f65a58a0338e6', app.ProjectName)
+                ];
+            web(strrep(uri.EncodedURI,"+","%20"))
             StartUpAppUIFigureCloseRequest(app,event)
         end
 
@@ -202,6 +164,9 @@ classdef ProjectStartupApp < matlab.apps.AppBase
 
         % Create UIFigure and components
         function createComponents(app)
+
+            % Get the file path for locating images
+            pathToMLAPP = fileparts(mfilename('fullpath'));
 
             % Create StartUpAppUIFigure and hide until all components are created
             app.StartUpAppUIFigure = uifigure('Visible', 'off');
@@ -248,7 +213,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.CoverImage = uiimage(app.WelcomeGrid);
             app.CoverImage.Layout.Row = 2;
             app.CoverImage.Layout.Column = [1 3];
-            app.CoverImage.ImageSource = 'Images/image_6.png';
+            app.CoverImage.ImageSource = fullfile(pathToMLAPP, 'Images', 'image_6.png');
 
             % Create WelcomeTitle
             app.WelcomeTitle = uilabel(app.WelcomeGrid);
@@ -259,7 +224,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.WelcomeTitle.FontWeight = 'bold';
             app.WelcomeTitle.Layout.Row = 1;
             app.WelcomeTitle.Layout.Column = [1 3];
-            app.WelcomeTitle.Text = 'Welcome to Electricity & Magnetism';
+            app.WelcomeTitle.Text = '';
 
             % Create FeedBackPanel
             app.FeedBackPanel = uipanel(app.StartUpAppUIFigure);
@@ -309,7 +274,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.ReviewText = uilabel(app.FeedBackGrid);
             app.ReviewText.HorizontalAlignment = 'center';
             app.ReviewText.WordWrap = 'on';
-            app.ReviewText.FontSize = 18;
+            app.ReviewText.FontSize = 14;
             app.ReviewText.Layout.Row = 2;
             app.ReviewText.Layout.Column = [1 3];
             app.ReviewText.Text = 'Please help us improve your experience by answering a few questions.';
@@ -323,7 +288,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.ReviewTitle.FontWeight = 'bold';
             app.ReviewTitle.Layout.Row = 1;
             app.ReviewTitle.Layout.Column = [1 3];
-            app.ReviewTitle.Text = 'Welcome to Module Template';
+            app.ReviewTitle.Text = '';
 
             % Show the figure after all components are created
             app.StartUpAppUIFigure.Visible = 'on';
