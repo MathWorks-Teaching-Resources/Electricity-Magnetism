@@ -103,17 +103,17 @@ Partial Differential Equation Toolbox™
 
 <a id="H_5252"></a>
 
-## **MagneticFieldAndCurrent.mlx (planned)**
+## [**MagneticFieldAndCurrent.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/MagneticFieldAndCurrent.mlx)
 |||
 | :-- | :-- |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Images/image_8.svg" width="40" alt="image_8.svg">        <br>  | **In this script, students will...** <br> $\bullet$ Describe how electric currents generate magnetic fields. <br> $\bullet$ Apply the Biot\-Savart law and Ampère's law to calculate magnetic fields. <br> $\bullet$ Illustrate magnetic field lines around current\-carrying conductors. <br>   |
+|<img src="Images/MagneticFieldAndCurrent.png" width="170" alt="image_8.svg">        <br>  | **In this script, students will...** <br> $\bullet$ Describe how electric currents generate magnetic fields. <br> $\bullet$ Apply the Biot\-Savart law and Ampère's law to calculate magnetic fields. <br> $\bullet$ Illustrate magnetic field lines around current\-carrying conductors. <br>   |
 
 <a id="H_76d7"></a>
 
 ## **MagneticDipole.mlx (planned)**
 |||
 | :-- | :-- |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Images/image_9.svg" width="40" alt="image_9.svg">        <br>  | **In this script, students will...** <br> $\bullet$ Explain the concept of magnetic dipole and its properties. <br> $\bullet$ Evaluate the interaction of magnetic dipoles with external magnetic fields. <br> $\bullet$ Determine the torque and potential energy of magnetic dipoles in various field configurations. <br>   |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Images/image_10.svg" width="40" alt="image_9.svg">        <br>  | **In this script, students will...** <br> $\bullet$ Explain the concept of magnetic dipole and its properties. <br> $\bullet$ Evaluate the interaction of magnetic dipoles with external magnetic fields. <br> $\bullet$ Determine the torque and potential energy of magnetic dipoles in various field configurations. <br>   |
 
 <a id="H_5c7e"></a>
 
