@@ -213,7 +213,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.CoverImage = uiimage(app.WelcomeGrid);
             app.CoverImage.Layout.Row = 2;
             app.CoverImage.Layout.Column = [1 3];
-            app.CoverImage.ImageSource = fullfile(pathToMLAPP, 'Images', 'image_6.png');
+            app.CoverImage.ImageSource = fullfile('Images', 'image_6.png');
 
             % Create WelcomeTitle
             app.WelcomeTitle = uilabel(app.WelcomeGrid);
