@@ -24,7 +24,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
     properties (Access = private)
         GitHubOrganization = "MathWorks-Teaching-Resources"; % Description
         GitHubRepository = "Electricity-Magnetism";
-        ImagePath {mustBeFile} = fullfile("Images","image_6.png"); 
+        ImagePath {mustBeFile} = fullfile("Images","VisualizeFieldCover.png"); 
     end
 
     properties (Access = private)
@@ -148,7 +148,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
         end
 
         % Button pushed function: ReviewUsButton
-        function ReviewUsButtonPushed(app, event)
+        function ReviewUsButtonPushed(app, ~)
             app.WelcomeGrid.Parent = app.WelcomePanel;
             app.FeedBackGrid.Parent = app.StartUpAppUIFigure;
         end
@@ -164,9 +164,6 @@ classdef ProjectStartupApp < matlab.apps.AppBase
 
         % Create UIFigure and components
         function createComponents(app)
-
-            % Get the file path for locating images
-            pathToMLAPP = fileparts(mfilename('fullpath'));
 
             % Create StartUpAppUIFigure and hide until all components are created
             app.StartUpAppUIFigure = uifigure('Visible', 'off');
@@ -213,7 +210,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.CoverImage = uiimage(app.WelcomeGrid);
             app.CoverImage.Layout.Row = 2;
             app.CoverImage.Layout.Column = [1 3];
-            app.CoverImage.ImageSource = fullfile('Images', 'image_6.png');
+            app.CoverImage.ImageSource = fullfile('Images', 'VisualizeFieldCover.png');
 
             % Create WelcomeTitle
             app.WelcomeTitle = uilabel(app.WelcomeGrid);

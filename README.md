@@ -1,9 +1,4 @@
-
-<a id="T_DEF03274"></a>
-
 # <span style="color:rgb(213,80,0)">Electricity & Magnetism: Introduction</span>
-<a id="H_053613DF"></a>
-
 
 [![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/180193-electricity-magnetism-introduction) or [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=README.mlx)
 
@@ -17,144 +12,110 @@ _Created with R2024b. Compatible with R2024b and later releases._
 
 This curriculum module contains interactive [MATLAB® live scripts](https://www.mathworks.com/products/matlab/live-editor.html) that provides supplementary examples and visualizations to enhance understanding of electricity and magnetism principles, specifically focusing on common application like capacitors and DC motors.
 
-<a id="H_F00D98E4"></a>
-
 ## Background
 
-This initial release of the Electricity & Magnetism courseware features two interactive scripts that explore the principles of how capacitors function, based on the laws of electrostatics.
-
-
-The instructions inside the live scripts will guide you through the exercises and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the <img src="Images/image_0.png" width="19" alt="image_0.png"> Stop button in the **RUN** section of the **Live Editor** tab in the MATLAB Toolstrip.
+The Electricity & Magnetism courseware features interactive scripts covering capacitors, electric fields, Gauss's Law, magnetic fields, magnetic dipoles, and DC motors.
+The instructions inside the live scripts will guide you through the exercises and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the <img src="Images/StopButtonIcon.png" width="19" alt="Stop icon"> Stop button in the **RUN** section of the **Live Editor** tab in the MATLAB Toolstrip.
 
 ## Contact Us
 
 Solutions are available upon instructor request. Contact the [MathWorks Educator Content Development Team](mailto:onlineteaching@mathworks.com) if you would like to provide feedback, or if you have a question.
 
-<a id="H_30BC7141"></a>
-
 ## Prerequisites
 
 This module assumes knowledge of basic calculus and introductory physics, including mechanics and fundamental concepts of electricity and magnetism.
 
-<a id="H_330E72C3"></a>
-
 ## Getting Started
+
 ### Accessing the Module
+
 ### **On MATLAB Online:**
 
-Use the [<img src="Images/image_1.png" width="136" alt="image_1.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/emag&project=emag.prj) link to download the module. You will be prompted to log in or create a MathWorks account. The project will be loaded, and you will see an app with several navigation options to get you started.
-
+Use the [<img src="Images/OpenInMATLABOnlineButton.png" width="136" alt="Open in MATLAB Online Button">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=README.mlx) link to download the module. You will be prompted to log in or create a MathWorks account. The project will be loaded, and you will see an app with several navigation options to get you started.
 ### **On Desktop:**
 
-Download or clone this repository. Open MATLAB, navigate to the folder containing these scripts and double\-click on [emag.prj](<matlab: openProject("emag.prj")>). It will add the appropriate files to your MATLAB path and open an app that asks you where you would like to start. 
-
-
-Ensure you have all the required products ([listed below](#H_E850B4FF)) installed. If you need to include a product, add it using the Add\-On Explorer. To install an add\-on, go to the **Home** tab and select  <img src="Images/image_2.png" width="16" alt="image_2.png"> **Add-Ons** > **Get Add-Ons**. 
-
-<a id="H_E850B4FF"></a>
+Download or clone this repository. Open MATLAB, navigate to the folder containing these scripts and double-click on [emag.prj](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj). It will add the appropriate files to your MATLAB path and open an app that asks you where you would like to start.
+Ensure you have all the required products (listed below) installed. If you need to include a product, add it using the Add-On Explorer. To install an add-on, go to the **Home** tab and select  <img src="Images/AddOnsIcon.png" width="16" alt="Add-ons icon"> **Add-Ons** \> **Get Add-Ons**.
 
 ## Products
 
 MATLAB® is used throughout the module along with the following products:
-
-
 Simulink®
-
-
 Symbolic Math Toolbox™
-
-
 Simscape™
-
-
 Partial Differential Equation Toolbox™
-
-<a id="H_E8C62B23"></a>
-
 # Scripts
 
-**Capacitors series**
-
-|||
-| :-- | :-- |
-| <img src="Images/image_3.svg" width="171" alt="image_3.svg"> <br>  | [**CapacitorsFundamental.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/CapacitorsFundamentals.mlx) <br> **In this script, students will...** <br> $\bullet$ Explore the fundamental principles and applications of capacitors in electrical circuits. <br> $\bullet$ Analyze the relationship between capacitors and electric fields, including their role in storing and releasing electrical energy. <br>   |
-| <img src="Images/image_4.png" width="171" alt="image_4.png"> <br>  | [**CapacitorsChargeDischarge.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/CapacitorsChargeDischarge.mlx) <br> **In this script, students will...** <br> $\bullet$ Analyze energy storage in capacitors and evaluate its applications in circuits. <br> $\bullet$ Simulate the charge and discharge of capacitors to demonstrate their role. <br>   |
-
-<a id="H_37d7"></a>
-
 ## [**ElectricFieldAndCharge.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/ElectricFieldAndCharge.mlx)
-|||
-| :-: | :-- |
-| <img src="Images/image_5.png" width="171" alt="image_5.png"> <br>  | **In this script, students will...** <br> $\bullet$ Analyze the relationship between electric charges and electric fields. <br> $\bullet$ Compute the electric field due to point charges and continuous charge distributions. <br> $\bullet$ Visualize Coulomb force and electric fields. <br>   |
 
-<a id="TMP_9182"></a>
+|      |      |
+| :-- | :-- |
+| <img src="Images/ElectricFieldAndChargeCover.png" width="170" alt="Electric field and charge visualization"> | **In this script, students will...** <br> • Analyze the relationship between electric charges and electric fields. <br> • Compute the electric field due to point charges and continuous charge distributions. <br> • Visualize Coulomb force and electric fields. |
+|      |      |
+**Capacitors series**
+|      |      |
+| :-- | :-- |
+| <img src="Images/CapacitorSymbol.png" width="170" alt="Capacitor icon"> | [**CapacitorsFundamentals.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/CapacitorsFundamentals.mlx) <br> **In this script, students will...** <br> • Explore the fundamental principles and applications of capacitors in electrical circuits. <br> • Analyze the relationship between capacitors and electric fields, including their role in storing and releasing electrical energy. <br> <br> |
+| <img src="Images/CapacitorChargeDischargeCover.png" width="170" alt="Capacitor charge and discharge visualization"> | [**CapacitorsChargeDischarge.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/CapacitorsChargeDischarge.mlx) <br> **In this script, students will...** <br> • Analyze energy storage in capacitors and evaluate its applications in circuits. <br> • Simulate the charge and discharge of capacitors to demonstrate their role. |
+|      |      |
+## [**GaussLawDoc.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/GaussLawDoc.mlx)
+
+|      |      |
+| :-- | :-- |
+| <img src="Images/GaussLawCover.png" width="170" alt="Gauss's law visualization"> | **In this script, students will...** <br> • Analyze charge distribution to identify symmetry. <br> • Learn to select an appropriate Gaussian surfaces with respect to the charge distribution. <br> • Compute electric field for various charge configurations using Gauss's Law. |
+|      |      |
+## [**MagneticFieldAndCurrent.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/MagneticFieldAndCurrent.mlx)
+
+|      |      |
+| :-- | :-- |
+| <img src="Images/MagneticFieldAndCurrent.png" width="170" alt="Magnetic field and current visualization"> | **In this script, students will...** <br> • Describe how electric currents generate magnetic fields. <br> • Apply the Biot-Savart law and Ampère's law to calculate magnetic fields. <br> • Illustrate magnetic field lines around current-carrying conductors. |
+|      |      |
+## [**MagneticDipole.m**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/MagneticDipole.m)
+
+|      |      |
+| :-- | :-- |
+| <img src="Images/MagneticDipoleCover.png" width="170" alt="Magnetic dipole field visualization"> | **In this script, students will...** <br> • Explain how current loops and bar magnets behave as magnetic dipoles. <br> • Visualize dipole magnetic field patterns and describe how field strength and direction vary around a dipole. <br> • Analyze torque, potential energy, alignment, and real-world examples of magnetic dipoles, including Earth's magnetic field. |
+|      |      |
+## [**DCmotor.m**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/DCmotor.m)
+
+|      |      |
+| :-- | :-- |
+| <img src="Images/DCmotorCover.png" width="170" alt="DC motor design visualization"> | **In this script, students will...** <br> • Connect magnetic dipole torque to how a DC motor produces rotation. <br> • Explain how commutation, multiple coils, and pole pairs produce continuous rotation and reduce torque ripple. <br> • Analyze back-EMF, speed-torque curves, power, efficiency, and design trade-offs in simplified brushed DC motors. |
+|      |      |
+##
 
 ## [**VisualizeField.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/VisualizeField.mlx)
-|||
+
+|      |      |
 | :-- | :-- |
-| <img src="Images/image_6.png" width="171" alt="image_6.png"> <br>  | **In this script, students will...** <br> $\bullet$ Learn how to visualize a field in two dimensions. <br> $\bullet$ Visualize their own electric field. <br>   |
-
-<a id="H_3e1e"></a>
-
-## [**GaussLawDoc.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/GaussLawDoc.mlx)
-|||
-| :-- | :-- |
-| <img src="Images/image_7.png" width="171" alt="image_7.png"> <br>  | **In this script, students will...** <br> $\bullet$ Analyze charge distribution to identify symmetry. <br> $\bullet$ Learn to select an appropriate Gaussian surface with respect to the charge distribution. <br> $\bullet$ Compute electric field for various charge configurations using Gauss's Law. <br>   |
-
-<a id="H_5252"></a>
-
-## [**MagneticFieldAndCurrent.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Electricity-Magnetism&project=emag.prj&file=Scripts/MagneticFieldAndCurrent.mlx)
-|||
-| :-- | :-- |
-|<img src="Images/MagneticFieldAndCurrent.png" width="170" alt="image_8.svg">        <br>  | **In this script, students will...** <br> $\bullet$ Describe how electric currents generate magnetic fields. <br> $\bullet$ Apply the Biot\-Savart law and Ampère's law to calculate magnetic fields. <br> $\bullet$ Illustrate magnetic field lines around current\-carrying conductors. <br>   |
-
-<a id="H_76d7"></a>
-
-## **MagneticDipole.mlx (planned)**
-|||
-| :-- | :-- |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Images/image_10.svg" width="40" alt="image_9.svg">        <br>  | **In this script, students will...** <br> $\bullet$ Explain the concept of magnetic dipole and its properties. <br> $\bullet$ Evaluate the interaction of magnetic dipoles with external magnetic fields. <br> $\bullet$ Determine the torque and potential energy of magnetic dipoles in various field configurations. <br>   |
-
-<a id="H_5c7e"></a>
-
-## **MagneticApplication.mlx (planned)**
-|||
-| :-- | :-- |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Images/image_10.svg" width="40" alt="image_10.svg">        <br>  | **In this script, students will...** <br> $\bullet$ Explain the basic principles of DC motor operation and the role of electromagnetic force. <br> $\bullet$ Examine the relationship between current, magnetic field, and torque in a DC motor. <br> $\bullet$ Model the performance and efficiency of DC motors. <br>   |
-
-<a id="H_F61733D7"></a>
+| <img src="Images/VisualizeFieldCover.png" width="170" alt="Field visualization"> | **In this script, students will...** <br> • Learn how to visualize a field in two dimensions. <br> • Visualize their own electric field. <br> |
+|      |      |
 
 # License
 
 The license for this module is available in the [LICENSE.md](https://github.com/MathWorks-Teaching-Resources/Electricity-Magnetism/blob/release/LICENSE.md).
-
 # Related Courseware Modules
-<a id="H_868F5748"></a>
 
 ## [DC Circuit Analysis](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/DC-Circuit-Analysis&project=DCCircuitAnalysis.prj&file=README.mlx)
-|||
+
+|      |      |
 | :-- | :-- |
-| <img src="Images/image_11.png" width="171" alt="image_11.png"> <br>  | **Available on:** <br> [<img src="Images/image_12.png" width="91" alt="image_12.png">](https://www.mathworks.com/matlabcentral/fileexchange/103375-dc-circuit-analysis) <br> [<img src="Images/image_13.png" width="136" alt="image_13.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/DC-Circuit-Analysis&project=DCCircuitAnalysis.prj&file=README.mlx) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/DC-Circuit-Analysis) <br>   |
+| <img src="Images/DCCircuitAnalysisCover.png" width="170" alt="DC Circuit Analysis cover image"> | **Available on:** <br> [<img src="Images/FileExchangeButton.png" width="91" alt="MATLAB File Exchange Icon">](https://www.mathworks.com/matlabcentral/fileexchange/103375-dc-circuit-analysis) <br> [<img src="Images/OpenInMATLABOnlineButton.png" width="136" alt="Open in MATLAB Online Button">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/DC-Circuit-Analysis&project=DCCircuitAnalysis.prj&file=README.mlx) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/DC-Circuit-Analysis) |
+|      |      |
+## [Virtual Measurement of Electron charge-to-mass ratio lab](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Virtual-Measurement-of-the-Electron-Charge-To-Mass-Ratio-Lab&project=virtual-measurement-of-the-electron-charge-to-m.prj&file=README.mlx)
 
-<a id="H_868F5748"></a>
-
-## [Virtual Measurement of Electron charge\-to\-mass ratio lab](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Virtual-Measurement-of-the-Electron-Charge-To-Mass-Ratio-Lab&project=virtual-measurement-of-the-electron-charge-to-m.prj&file=README.mlx)
-|||
+|      |      |
 | :-- | :-- |
-| <img src="Images/image_14.png" width="171" alt="image_14.png"> <br>  | **Available on:** <br> [<img src="Images/image_15.png" width="91" alt="image_15.png">](https://www.mathworks.com/matlabcentral/fileexchange/94540-virtual-measurement-of-e-m-lab) <br> [<img src="Images/image_16.png" width="136" alt="image_16.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Virtual-Measurement-of-the-Electron-Charge-To-Mass-Ratio-Lab&project=virtual-measurement-of-the-electron-charge-to-m.prj&file=README.mlx) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/Virtual-Measurement-of-the-Electron-Charge-To-Mass-Ratio-Lab) <br>   |
-
+| <img src="Images/ElectronChargeToMassLabCover.png" width="170" alt="Electron charge-to-mass ratio lab cover image"> | **Available on:** <br> [<img src="Images/FileExchangeButton.png" width="91" alt="MATLAB File Exchange Icon">](https://www.mathworks.com/matlabcentral/fileexchange/94540-virtual-measurement-of-e-m-lab) <br> [<img src="Images/OpenInMATLABOnlineButton.png" width="136" alt="Open in MATLAB Online Button">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Virtual-Measurement-of-the-Electron-Charge-To-Mass-Ratio-Lab&project=virtual-measurement-of-the-electron-charge-to-m.prj&file=README.mlx) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/Virtual-Measurement-of-the-Electron-Charge-To-Mass-Ratio-Lab) |
+|      |      |
+## [Electricity & Magnetism on File Exchange](https://www.mathworks.com/matlabcentral/fileexchange/180193-electricity-magnetism-introduction)
 
 Or feel free to explore our other [modular courseware content](https://www.mathworks.com/matlabcentral/fileexchange/?q=tag%3A%22courseware+module%22&sort=downloads_desc_30d).
-
 # Educator Resources
--  [Educator Page](https://www.mathworks.com/academia/educators.html) 
-<a id="H_0FA5DA18"></a>
 
-# Contribute 
+- [Educator Page](https://www.mathworks.com/academia/educators.html)
+# Contribute
 
 Looking for more? Find an issue? Have a suggestion? Please contact the [MathWorks Educator Content Development Team](mailto:%20onlineteaching@mathworks.com). If you want to contribute directly to this project, you can find information about how to do so in the [CONTRIBUTING.md](https://github.com/MathWorks-Teaching-Resources/Electricity-Magnetism/blob/release/CONTRIBUTING.md)  page on GitHub.
 
-
- *©* Copyright 2025 The MathWorks, Inc
-
-
+*©* Copyright 2025 The MathWorks, Inc
