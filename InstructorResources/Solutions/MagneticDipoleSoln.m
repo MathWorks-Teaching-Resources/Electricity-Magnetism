@@ -1,5 +1,5 @@
 %[text] # Magnetic Dipoles
-%[text] [⇦ Main Menu](file:..\\MainMenu.m)
+%[text] [⇦ Main Menu](file:../../MainMenu.m)
 %[text] From refrigerator magnets to Earth's magnetic field, magnetic dipoles are fundamental to understanding magnetism. In this script, we'll explore how magnetic dipoles behave, interact with external fields, and generate their own magnetic fields.
 %[text]{"align":"center"} ![](text:image:8404)
 %%
@@ -13,7 +13,7 @@
 %[text] ## Fundamentals of Magnetic Dipoles
 %%
 %[text] ### What is a Magnetic Dipole?
-%[text] A magnetic dipole is a magnetic system with a north-seeking side and a south-seeking side, much like a small bar magnet. Unlike electric charges, magnetic poles have not been observed in isolation, so a north pole always appears with a south pole. This makes magnetic dipoles similar to, but not identical with, [electric dipoles](file:.\\ElectricFieldAndCharge.m).
+%[text] A magnetic dipole is a magnetic system with a north-seeking side and a south-seeking side, much like a small bar magnet. Unlike electric charges, magnetic poles have not been observed in isolation, so a north pole always appears with a south pole. This makes magnetic dipoles similar to, but not identical with, [electric dipoles](file:../../Scripts/ElectricFieldAndCharge.m).
 %[text] The simplest magnetic dipole is a small current loop. When electric current flows in a circular path, it creates a dipole-like magnetic field pattern. Far from the loop, this pattern resembles the field of a tiny bar magnet. This is why we describe magnetic dipoles using the magnetic dipole moment $\\vec{m}$:
 %[text]{"align":"center"} $ \\vec{m} = I A \\hat{n} \\qquad (1)$
 %[text] Where:
@@ -996,7 +996,7 @@ end
 %[text] - **Potential energy** $U = -\\vec{m} \\cdot \\vec{B}$ is minimized when aligned, explaining why alignment occurs
 %[text] - **Magnetic field of a dipole** falls off as $1/r^3$, faster than point charge fields
 %[text] - Real applications include compasses, MRI, data storage, and Earth's magnetism \
-%[text] These concepts are the bridge to [DC motor behavior](file:.\\DCmotor.m), magnetic data storage, medical imaging, and the atomic-scale magnetic dipoles that appear in quantum mechanics.
+%[text] These concepts are the bridge to [DC motor behavior](file:../../Scripts/DCmotor.m), magnetic data storage, medical imaging, and the atomic-scale magnetic dipoles that appear in quantum mechanics.
 %[text] 
 %[text] 
 %[text] %[text:anchor:M_36e6] **Image Credits and Licenses**
@@ -1005,7 +1005,10 @@ end
 %[text] - MRI image: [US Navy 111006-O-KK908-026 An MRI machine is set up at the Role 3 Medical Facility at Joint Operating Base, Bastion, Afghanistan](https://commons.wikimedia.org/w/index.php?curid=16969352), Royal Air Force photo by Sgt. Mitch Moore/Released via U.S. Navy and Wikimedia Commons, public domain.
 %[text] - Hard disk drive image: [Hdd od srodka](https://commons.wikimedia.org/w/index.php?curid=13497), from Wikimedia Commons, public domain.
 %[text] - Electric motor cutaway image: [Rotterdam Ahoy Europort 2011 (14)](https://commons.wikimedia.org/w/index.php?curid=17313755), by S.J. de Waard, licensed under [Creative Commons Attribution-Share Alike 3.0](https://creativecommons.org/licenses/by-sa/3.0/). \
-%[text] [⇦ Main Menu](file:..\\MainMenu.m)
+%[text] [⇦ Main Menu](file:../../MainMenu.m)
+%%
+%[text] ## Help us Improve
+%[text] [Share your feedback](<matlab: ShareFeedback>) to help us improve this module.
 
 %[appendix]{"version":"1.0"}
 %---

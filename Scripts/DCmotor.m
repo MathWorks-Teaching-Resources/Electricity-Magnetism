@@ -1,6 +1,6 @@
 %[text] # DC Motors: From Dipole Torque to Continuous Rotation
-%[text] [⇦ Main Menu](file:..\\MainMenu.m)
-%[text] In [Magnetic Dipoles](file:.\\MagneticDipole.m), you saw that a current loop in a magnetic field feels a torque, a twist that tends to rotate the loop. That twist is useful, but it is not yet a motor. When the loop lines up with the field, the torque becomes zero. This script follows the extra ideas needed to keep a DC motor turning.
+%[text] [⇦ Main Menu](file:../MainMenu.m)
+%[text] In [Magnetic Dipoles](file:MagneticDipole.m), you saw that a current loop in a magnetic field feels a torque, a twist that tends to rotate the loop. That twist is useful, but it is not yet a motor. When the loop lines up with the field, the torque becomes zero. This script follows the extra ideas needed to keep a DC motor turning.
 %[text]{"align":"center"} ![](text:image:8be2)
 %%
 %[text:tableOfContents]{"heading":"Table of Contents"}
@@ -11,7 +11,7 @@
 %[text] The ![Try this icon](text:image:38a9)  and  ![Exercise icon](text:image:705e) icons refer to two different types of interactive activities that you will find in this script. The ![Try this icon](text:image:1f2a)  usually indicates an interaction where you will explore the visualization of some concept introduced in this script. The ![Exercise icon](text:image:0a81) interactions are designed to challenge your understanding of those concepts and may be used for grading and completion checks by your professor.
 %%
 %[text] ## Recap: From Dipole Moment to Motor Torque
-%[text] In [Magnetic Dipoles](file:.\\MagneticDipole.m), you learned that the magnetic dipole moment of a current loop is $\\vec{m} = IA\\hat{n}$. A dipole in an external field $\\vec{B}$ has torque $\\tau = mB\\sin(\\theta)$, where $\\theta$ is the angle between $\\vec{m}$ and $\\vec{B}$, and $B =  \\|\\vec{B}\\|$. For a motor coil with $N$ turns of wire, the dipole moment is $N$ times larger, giving the motor torque equation:
+%[text] In [Magnetic Dipoles](file:MagneticDipole.m), you learned that the magnetic dipole moment of a current loop is $\\vec{m} = IA\\hat{n}$. A dipole in an external field $\\vec{B}$ has torque $\\tau = mB\\sin(\\theta)$, where $\\theta$ is the angle between $\\vec{m}$ and $\\vec{B}$, and $B =  \\|\\vec{B}\\|$. For a motor coil with $N$ turns of wire, the dipole moment is $N$ times larger, giving the motor torque equation:
 %[text]{"align":"center"} %[text:anchor:M_931c] $ \\tau = NIAB\\sin(\\theta) \\qquad (1) $
 %[text] Where:
 %[text] - $N$ is the **number of turns** in the coil,
@@ -965,7 +965,10 @@ end
 %[text] - **Back-EMF** (Equation 6): a spinning coil generates $E\_{\\text{back}} = K\_e\\omega$, which opposes the supply voltage and reduces current as speed rises
 %[text] - **Speed-torque relationship**: the motor has a linear speed-torque curve with no-load speed $\\omega\_0 = V/K\_e$ and stall torque $\\tau\_{\\text{stall}} = K\_tV/R$ \
 %[text] Understanding these fundamentals prepares you to study more advanced motor types, power electronics for motor control, and the design trade-offs that shape many electromechanical systems.
-%[text] [⇦ Main Menu](file:..\\MainMenu.m)
+%[text] [⇦ Main Menu](file:../MainMenu.m)
+%%
+%[text] ## Help us Improve
+%[text] [Share your feedback](<matlab: ShareFeedback>) to help us improve this module.
 
 %[appendix]{"version":"1.0"}
 %---
